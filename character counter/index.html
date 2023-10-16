@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="innerContainer">
+        <h3>Character counter</h3>
+        <textarea
+          name="txtarea"
+          id="textArea"
+          cols="60"
+          rows="5"
+          maxlength="50"
+          placeholder="enter text here..."
+        ></textarea>
+
+        <div class="counter">
+          <p>Total Characters: <span id="totalChars"></span></p>
+          <p>Remaining Characters: <span id="remainChars"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
