@@ -11,7 +11,7 @@ button.addEventListener("click", (e) => {
   e.preventDefault();
   const city = input.value;
   async function getData() {
-    const apiID = "b3e9221d762f237e6eb2fabd4b8c0706";
+    const apiID = "ENTER YOUR API ID HERE";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiID}`;
 
     let data = await fetch(url);
