@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.root img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.weatherContainer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgb(0, 0, 0));
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  display: none;
+}
+
+.weatherContainer #city {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+#city:focus {
+  outline: 2px solid rgb(168, 122, 255);
+}
+
+.root .date {
+  font-size: 15px;
+}
+
+.weatherContainer #btn {
+  padding: 10px 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#btn:active {
+  outline: 2px solid rgb(168, 122, 255);
+}
+
+.active {
+  display: block;
+}
+
+.temperature {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+  .weatherContainer {
+    height: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+}
