@@ -1,0 +1,68 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+input{
+  padding:10px 20px;
+  font-size: 1rem;
+  width:400px;
+  margin-bottom: 20px;
+}
+
+.outer{
+  background: url("https://preview.redd.it/desktop-aesthetic-wallpaper-1920-1080-v0-d2hd73xxwvaa1.jpg?auto=webp&s=04ca7dae27f9c74b35d8df235f5955dc794df29c");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#root{
+  width:470px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border:1px solid rgb(97, 97, 97);
+}
+
+#root li{
+  list-style: none;
+  padding:10px 5px;
+  border-bottom: 1px solid rgb(77, 77, 77);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:5px;
+  color:white;
+  }
+
+#root li button{
+  border:1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color:white;
+  border-radius: 2px;
+}
+
+.container{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding:30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border:1px solid rgb(146, 146, 146);
+  color:white;
+}
+
+.container h1{
+  color:white;
+}
+
+button{
+  padding:10px 20px;
+}
